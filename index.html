@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <h2>Gallery</h2>
+    <p>При нажатии на рисунок - он увеличивается</p>
+    <div class="slider">
+        <div class="item">
+            <img src="./img/1.jpg" alt="Первый слайд">
+            <div class="slideText">Заголовок слайда 1</div>
+        </div>
+
+        <div class="item">
+            <img src="./img/2.jpg" alt="Второй слайд">
+            <div class="slideText">Заголовок слайда 2</div>
+        </div>
+
+        <div class="item">
+            <img src="./img/4.jpg" alt="Третий слайд">
+            <div class="slideText">Заголовок слайда 3</div>
+        </div>
+
+        <div class="item">
+            <img src="./img/5.jpg" alt="Третий слайд">
+            <div class="slideText">Заголовок слайда 4</div>
+        </div>
+
+        <div class="item">
+            <img src="./img/9.jpg" alt="Третий слайд">
+            <div class="slideText">Заголовок слайда 5</div>
+        </div>
+
+        <div class="item">
+            <img src="./img/7.jpg" alt="Третий слайд">
+            <div class="slideText">Заголовок слайда 6</div>
+        </div>
+
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+        <a class="prevAllM" onclick="minusSlideAll()">&#10094;&#10094;</a>
+        <a class="prevAllP" onclick="plusSlideAll()">&#10095;&#10095;</a>
+        <a class="next" onclick="plusSlide()">&#10095;</a>
+    </div>
+    <br>
+
+
+
+    <div class="slider-dots">
+        <button id="autoplay">Autoplay</button>
+        <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(6)"></span>
+    </div>
+
+
+    <p class="q"><i>
+        P.S. Почему при нажатии на картинку она увеличилась/уменьшилась, а при последующей попытке увеличить ее, она больше не реагирует?</i></p>
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
